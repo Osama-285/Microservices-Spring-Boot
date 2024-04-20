@@ -1,4 +1,4 @@
-package com.microservices.student.Model;
+package com.microservices.school.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,13 +16,11 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Student {
-
+public class School {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String firstName;
-    private String lastName;
+    private String name;
     private String email;
-    private Integer schoolId;
+
 }
