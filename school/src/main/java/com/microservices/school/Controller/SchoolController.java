@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.microservices.school.Model.School;
 import com.microservices.school.Service.SchoolService;
+import com.microservices.school.Utils.FullSchoolResponse;
 
 import lombok.RequiredArgsConstructor;
 
