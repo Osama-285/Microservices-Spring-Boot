@@ -21,7 +21,6 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("/api/v1/schools")
 @RequiredArgsConstructor
 public class SchoolController {
-
     private final SchoolService service;
 
     @PostMapping
@@ -36,8 +35,7 @@ public class SchoolController {
     }
 
     @GetMapping("/with-students/{schoolId}")
-    public ResponseEntity<fullSchoolResponse> findAllSchools(@PathVariable("schoolId") Integer school_ID) {
+    public ResponseEntity<FullSchoolResponse> findAllSchools(@PathVariable("schoolId") Integer school_ID) {
         return ResponseEntity.ok(service.findSchoolsWithStudents(school_ID));
     }
-
 }
